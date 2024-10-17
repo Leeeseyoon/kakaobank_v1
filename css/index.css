@@ -18,6 +18,35 @@ a {
 }
 
 
+/* span{background: linear-gradient(to top, #ffea98 50%, transparent 40%);} */
+span {
+    position: relative;
+    font-weight: bold;
+    z-index: 3;
+  }
+  span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: rgba(255, 240, 31, 0.6);
+    bottom: 10%;
+  }
+  p:hover span::after {
+    width: 100%;
+    transition: width .3s;
+    z-index: -1;
+  }
+  H1:hover span::after {
+    width: 100%;
+    transition: width .3s;
+    z-index: -1;
+  }
+  
+
 
 /* 버튼 디자인 */
 button{
@@ -76,7 +105,8 @@ button{
 .title_txt h1{
     font-size: 65px;
 }
-.title_txt p{font-size: 32px; margin-bottom: 2%;}
+.title_txt p{font-size: 32px; margin-bottom: 1%;}
+.sub_p{font-size: 25px;}
 
 /* 계좌이체 */
 #con1 .imgbox{
@@ -117,17 +147,15 @@ button{
 
 
 /* 예적금 */
-#con2{background-color: aqua; 
-    
+#con2{
     margin: 0 20% 0% 20%;
     text-align: left;
-    
 }
 
 #con2 .title_txt{
     text-align: right;
 }
-#con2 .sub_p{margin-top: 2%; font-size: 25px}
+#con2 .sub_p{margin-top: 2%; font-size: 25px;}
 
 
 #con2 .con2box{ margin-top: 5%;}
@@ -153,3 +181,33 @@ button{
 
     #con2 .con2_subbox1{margin-top: 13%;}
     #con2 .con2_subbox2{margin-top: 10%; text-align: right;}
+
+
+/* 26주 적금 */
+#con3{
+    margin: 0 20% 0% 20%;
+    text-align: left;
+    height: 100vh;
+
+    margin-top: 15%;
+}
+#con3 .title_txt{float: left;}
+#con3 .sub_p{font-size: 25px; margin-top: 2%;}
+#con3 .L_img{
+    width: 365px;
+    height: 750px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+    float: right;
+    }
+#con3 button{ width: 180px; height: 60px; border-radius: 12px;margin-top: 2%;}
+
+
+/* 프렌즈 체크카드 */
+#con4{background-color: #efe9d2;
+    width: 100%;
+    height: 100vh;}
+#con4 .title_txt p{margin-top: 1%; font-size: 24px;}
+#con4 .title_txt h1{  line-height: 1.3; margin-top: 5%; font-size: 50px;}
+#con4 button{ width: 355px; height: 60px; border: 12px; 
+    font-size: 24px; }
