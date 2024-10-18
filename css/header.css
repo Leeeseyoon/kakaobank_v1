@@ -33,3 +33,37 @@ a {
     margin-left: 35px; /* 아이템 간격 */
 }
 
+
+/* 헤더 호버효과 */
+#header .h_logo:hover{
+    background-color: rgb(234, 234, 234);
+    transition: all .3s ease-out;
+    border-radius: 5px;
+}
+#header .h_nav li:hover{
+
+    background-color: rgb(234, 234, 234);
+    transition: all .3s ease-out;
+    border-radius: 5px;
+}
+
+.h_nav a{
+    text-decoration: none;
+    position: relative;
+    padding: 6px 12px; 
+}
+.h_nav a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color:  #FFD735;
+    transition: all .3s ease-out;
+}
+
+.h_nav a:hover::after{
+    width: 100%;
+}
