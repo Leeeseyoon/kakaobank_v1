@@ -67,3 +67,28 @@ a {
 .h_nav a:hover::after{
     width: 100%;
 }
+
+/* Top */
+/* 하단 버튼 */
+.moveTopBtn { 
+    position: fixed;
+    bottom: 1rem;
+        right: 1rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: rgb(60, 46, 28);
+        border-radius: 50%;
+        color: #fff;
+}
+.moveTopBtn h1{font-size: 2.3rem; margin-top: 3%;}
+.button-container {position: relative;z-index: 1;}
+
+.button-container button {
+position: absolute;
+font-size: 16px;
+}
+.moveTopBtn:hover{
+    transition: 0.5s ease;
+    background-color: #ffb623;
+    scale: 1.2;
+}
