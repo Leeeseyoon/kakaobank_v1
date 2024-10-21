@@ -118,7 +118,6 @@ button{
 }
 
 #con1{
-    margin-top: 40%;
     height: 100vh;
     
     margin: 0 20% 20% 20%;
@@ -126,7 +125,7 @@ button{
 }
 #con1 .title_txt{ 
     float: left;
-    padding-top: 10%;
+    
 }
 
 #con1 .L_img{float: right; margin-right: 15%;margin-top: 10%;}

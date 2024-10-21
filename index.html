@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/button.css">
     <title>Document kakaobank</title>
     
     <!-- 페이드 효과 스크립트 링크 -->
@@ -46,6 +46,43 @@
             transform: translateY(-5%); /* 기본 위치에서 20px 아래로 이동 */
         }
 
+    .download-btn {
+        position: relative;
+        padding: 12px 24px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #ff4136;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        margin: 10px;
+    }
+
+    .download-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .download-btn:hover::before {
+        transform: translateX(0);
+    }
+
+    .hover-button {
+        position: relative;
+        padding: 10px 20px;
+        
+    }
+    
+    
 </style>
 <body>
     <div id="wrap">
@@ -79,8 +116,8 @@
                     <!-- <video src="image/Main_KV_2line_ko.mp4" autoplay muted loop></video> -->
                 <div class="main_txt">
                     <h1>이미 모두의 은행 <br>지금은 카카오뱅크</h1>
-                    <button><img src=""> Google Play</button><!-- 구글플레이 로고 -->
-                    <button><img src=""> App store</button><!-- 앱스토어 로고 -->
+                    <button class="download-btn"><img src="path/to/google-play-icon.png" alt="Google Play"> </button>
+                    <button class="download-btn"><img src="path/to/app-store-icon.png" alt="App Store"> </button>
                 </div>
                 
             </div>
@@ -103,7 +140,10 @@
                             여러 건의 이체도 몇 번의 터치로 <br>
                             손쉽게 송금 할 수 있습니다.
                         </p>
-                        <button>카카오뱅크 입출금통장 ></button>
+                        <button class="hover-button">
+                            <span class="default-text">바로가기</span>
+                            <span class="hover-text">카카오뱅크 입출금통장 ></span>
+                        </button>
                     </div>
                 </div>
                 
@@ -139,7 +179,10 @@
                         내가 원하는 만기날짜를 선택하여 가입할 수 있습니다.</p>
 
                     <div class="but_sub_box">
-                        <button>바로가기 ></button> 
+                        <button class="hover-button">
+                            <span class="default-text">바로가기</span>
+                            <span class="hover-text">정기예금 ></span>
+                        </button>
                     </div>
                         
                 </div>
@@ -150,7 +193,10 @@
                         적은 금액을 원하는금액과 기간을 설정하여 이용해보세요.</p>
 
                     <div class="but_sub_box2">
-                        <button>바로가기 ></button> 
+                        <button class="hover-button">
+                            <span class="default-text">바로가기</span>
+                            <span class="hover-text">자유적금 ></span>
+                        </button>
                     </div>
                         
                 </div>
@@ -164,7 +210,10 @@
                     <p data-aos="fade-down"  data-aos-delay="200" data-aos-duration="1000">26주 적금 챌린지</p>
                     <h1 data-aos="fade-down"  data-aos-delay="300" data-aos-duration="1000">함께 도전해서<br>재미있는 26주 적금</h1>
                     <p class="sub_p" data-aos="fade-down"  data-aos-delay="500" data-aos-duration="1000">26주동안 변화하는 재미에 빠져있는 사이 <br>어느덧 만기 달성 경험을 맛보게 됩니다.</p>
-                    <button data-aos="fade-down"  data-aos-delay="500" data-aos-duration="1000">바로가기 ></button>
+                    <button data-aos="fade-down"  data-aos-delay="500" data-aos-duration="1000" class="hover-button">
+                        <span class="default-text">바로가기</span>
+                        <span class="hover-text">26주 적금 챌린지 ></span>
+                    </button>
                 </div>
                 <div class="phone">
                     <div class="L_img" data-aos="fade-downimg"  data-aos-duration="1000"><img src="" alt=""></div>
