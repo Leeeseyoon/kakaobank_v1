@@ -80,7 +80,7 @@ button{
     height: 60px;
     color: white;
     background-color: rgb(60, 46, 28);
-    border-radius:18px;
+    border-radius:30px;
     margin-top: 10%;
     font-size: 20px;
 }
@@ -90,7 +90,7 @@ button{
     background-color: white;
     padding-top: 5%;
     /* line-height: 1.5; */
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .txtbox .under{
     margin-top: 2%;
@@ -125,7 +125,7 @@ button{
 }
 #con1 .title_txt{ 
     float: left;
-    
+    padding-top: 10%;
 }
 
 #con1 .L_img{float: right; margin-right: 15%;margin-top: 10%;}
