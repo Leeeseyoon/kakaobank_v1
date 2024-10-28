@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{margin: 0; padding: 0;
+    font-family: "Noto Sans KR", sans-serif;}
+button{border: 0; background-color: transparent;}
+ul, li {list-style-type: none;}
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+#wrap{
+    width: 100%;
+    background-color: white;    
+}
+#content{
+    text-align: center;
+}
+
+
+/* span{background: linear-gradient(to top, #ffea98 50%, transparent 40%);} */
+span {
+    position: relative;
+    font-weight: bold;
+    z-index: 3;
+  }
+  span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: rgba(255, 240, 31, 0.6);
+    bottom: 10%;
+  }
+  p:hover span::after {
+    width: 100%;
+    transition: width .3s;
+    z-index: -1;
+  }
+  H1:hover span::after {
+    width: 100%;
+    transition: width .3s;
+    z-index: -1;
+  }
+  
+
+
+/* 버튼 디자인 */
+button{
+    color: white;
+    background-color: rgb(60, 46, 28);
+    border-radius:12px;
+    font-size: 20px;
+    
+}
+
+/* 랜딩 페이지  */
+#landing{
+    width: 100%; 
+    height: 100vh;
+    background: linear-gradient(180deg, #FFFAD2, #FFD735);}
+
+#landing .b_img video{width: 100%;}
+#landing .b_img { position: absolute; z-index: 1; margin-top: 20%; opacity: 0.9;}
+
+#landing .main_txt{
+    position: absolute; 
+    margin-left: 38%; 
+    font-size: 30px;
+    z-index: 2;
+    margin-top: 10%;    
+} 
+
+
+#landing .main_txt button{
+    width: 186px;
+    height: 60px;
+    color: white;
+    background-color: rgb(60, 46, 28);
+    border-radius:18px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.txtbox{
+    font-size: 32px; 
+    background-color: white;
+    padding-top: 5%;
+    /* line-height: 1.5; */
+    margin-bottom: 10%;
+}
+.txtbox .under{
+    margin-top: 2%;
+}
+.txtbox .under span{
+    font-weight: bold;
+    
+}
+
+
+/* 컨텐츠 공통설정 */
+.title_txt h1{
+    font-size: 65px;
+}
+.title_txt p{font-size: 32px; margin-bottom: 1%;}
+.sub_p{font-size: 25px;}
+
+/* 계좌이체 */
+#con1 .imgbox{
+    width: 365px;
+    height: 750px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+
+}
+
+#con1{
+    margin-top: 40%;
+    height: 100vh;
+    
+    margin: 0 20% 20% 20%;
+    text-align: left;
+}
+#con1 .title_txt{ 
+    float: left;
+    padding-top: 10%;
+}
+
+#con1 .L_img{float: right; margin-right: 15%;margin-top: 10%;}
+#con1 .R_img{ float: left; margin-left: 14%;
+    margin-top: 5%;}
+#con1 .txt1{
+    font-size: 25px;
+    line-height: 1.5;
+    float:right; 
+    margin-top: 5%;
+    margin-right: 8.7%;
+    vertical-align: bottom;}
+#con1 .txt1 button{
+    width: 300px;
+    height: 60px;
+    font-size: 24px; font-weight: 400;
+    margin-top: 5%;}
+
+
+
+/* 예적금 */
+#con2{
+    margin: 0 20% 0% 20%;
+    text-align: left;
+}
+
+#con2 .title_txt{
+    text-align: right;padding-top: 7.5%;
+}
+#con2 .sub_p{margin-top: 2%; font-size: 25px;}
+
+
+#con2 .con2box{ margin-top: 5%;}
+#con2 .con2box .imgbox{
+    
+    display: flex ; justify-content: space-between;
+}
+#con2 .con2box .imgbox img{
+    width: 300px; height: 300px; 
+    background-color: rgb(35, 119, 91); 
+    border-radius: 10px;    
+} 
+#con2 .con2box{ text-align: center;
+    display: block ; justify-content: space-around; }
+#con2 .con2box .but_box button{
+    margin-top: 5%; margin-left: 5%;}
+
+
+    /* 예적금 텍스트설정 */
+    #con2 button{ width: 180px; height: 60px; border-radius: 12px;margin-top: 5%;}
+    #con2 .con2_subbox1, .con2_subbox2 p{font-size: 25px;}
+    #con2 .con2_subbox1 h1, .con2_subbox2 h1{font-size: 50px;}
+
+    #con2 .con2_subbox1{margin-top: 13%;}
+    #con2 .con2_subbox2{margin-top: 10%; text-align: right;}
+
+
+/* 26주 적금 */
+#con3{
+    margin: 0 20% 0% 20%;
+    text-align: left;
+    height: 100vh;
+    
+    margin-top: 15%;
+}
+#con3 .title_txt{float: left;padding-top: 10%;}
+#con3 .sub_p{font-size: 25px; margin-top: 2%;}
+#con3 .L_img{
+    width: 365px;
+    height: 750px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+    float: right;
+    margin-top: 10%;
+    }
+#con3 button{ width: 180px; height: 60px; border-radius: 12px;margin-top: 2%;}
+
+
+/* 프렌즈 체크카드 */
+#con4{background-color: #efe9d2;
+    width: 100%;
+    height: 100vh;}
+#con4 .title_txt h1{padding-top: 5%;}
+#con4 .title_txt p{margin-top: 1%; font-size: 24px;}
+#con4 .title_txt h1{  line-height: 1.3; margin-top: 5%; font-size: 50px;}
+#con4 button{ width: 355px; height: 60px; border: 12px; 
+    font-size: 24px; }
+
+/* 해외계좌 송금 */
+#con5{background-color: rgb(255, 234, 192);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.con5_box1 h1{
+    padding-top: 5%; 
+    font-size: 48px;}
+.con5_box1 p{font-size: 24px;}
+
+.con5_box1 .b_img{
+    position: absolute;
+    opacity: 0.4;
+    left: 0; /* 가장 왼쪽에 위치 */
+}
+.con5_box1 .imgbox{
+    width: 270px;
+    height: 552px;
+    background-color: gray;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 1.5%;
+}
+
+/* 서류 제출페이지 */
+#con6{
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+}
+.con6{
+    float: left;
+    text-align: left;
+    margin: 0 20% 0 20%;    
+}
+.con6 h1{
+    margin-top: 10%;
+    font-size: 48px;}
+.con6 p{
+    font-size: 24px;
+}
+.con6 .but_box{
+    display: block; justify-content: center;}
+
+.con6 .but_box button{
+    margin-top: 2%;
+    
+    width: 200px; height: 68px;
+    background-color: black; color: white;
+    border-radius: 50px;
+    
+}
+#con6 .box1, .box2, .box3, .box4{
+    transform: translateY(80%);
+    margin-left: 20%;
+    display: none;
+    width: 1140px;
+    height: 472px; 
+    position: relative;
+}
+#con6 .box1 {
+    background-color: rgb(223, 223, 223);
+    }
+#con6 .box2{
+    background-color: rgb(255, 46, 46);
+    }
+#con6 .box3{
+    background-color: rgb(82, 49, 228);
+    }
+#con6 .box4{ 
+    background-color: rgb(89, 20, 20);
+    }
+
+/* it 금융 */
+#con7{
+    width: 100%;
+    height: 100vh;
+}
+
+#con7 h1{
+    padding-top: 5%;
+    font-size: 48px;
+}
+
+.con7_box{
+    display: block;
+    justify-content: center;
+    margin:5% 20% 0 20%;  
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.circle::after{
+    width: 532px;
+    height: 532px;
+    content: "";
+    border-radius: 50%;
+    background-color: #ffe120e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+.circle .tbox h3{font-size: 35px;}
+.circle .tbox p{font-size: 20px; margin-top: 5%;}
+.tbox2 h3{font-size: 35px;margin-top: 27%;}
+.tbox2 p{font-size: 20px; margin-top: 5%;}
+
+.con7_box .tbox{
+    margin-top: 35%;
+}
+
+
+.circle:nth-child(1){position: absolute;
+    }
+.circle:nth-child(2){position: absolute;
+    margin-left: 18%; 
+
+    }
+.circle:nth-child(3){
+    
+    position: absolute;
+    margin-left: 35%; 
+    }
